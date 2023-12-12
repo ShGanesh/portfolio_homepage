@@ -33,7 +33,6 @@ st.markdown("# Welcome to my portfolio!")
 st.markdown("I'm MC Sharen Ganesh, a passionate Machine Learning and LLM enthusiast.")
 st.markdown("I'm skilled in stuff here and there.")
 st.markdown("Check out my projects below.")
-st.link_button("Explore Projects", '#Projects')
 
 # Projects
 st.markdown("## Projects")
@@ -48,6 +47,7 @@ for i, project in enumerate(projects):
             st.markdown("### " + project["title"])
             st.markdown(project["description"])
             st.markdown("**Tech Stack:** " + ", ".join(project["tech_stack"]))
+            st.link_button("Visit the project", project["url"], help=f"Directed to {project['url']}")
 
 # Skills
 st.markdown("## Skills")

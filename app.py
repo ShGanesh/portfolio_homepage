@@ -6,16 +6,16 @@ projects = [
         "title": "Research Paper Summarizer",
         "description": "A tool to summarize research papers intelligently. It first splits the paper in sections by the titles, and summarizes them part by part.",
         "tech_stack": ["Technology 1", "Technology 2"],
-        "screenshot": "project1_screenshot.jpg",
+        "screenshot": "images/profile_pic.jpg",
         "url": "https://github.com/your-username/project1",
     },
-    {
-        "title": "Project 2 Title",
-        "description": "Another brief description of the project.",
-        "tech_stack": ["Technology 3", "Technology 4"],
-        "screenshot": "project2_screenshot.jpg",
-        "url": "https://github.com/your-username/project2",
-    },
+    # {
+    #     "title": "Project 2 Title",
+    #     "description": "Another brief description of the project.",
+    #     "tech_stack": ["Technology 3", "Technology 4"],
+    #     "screenshot": "project2_screenshot.jpg",
+    #     "url": "https://github.com/your-username/project2",
+    # },
     # ... Add more projects ...
 ]
 
@@ -33,7 +33,7 @@ st.markdown("# Welcome to my portfolio! ")
 st.markdown("I'm MC Sharen Ganesh, a passionate Machine Learning and LLM enthusiast.")
 st.markdown("I'm skilled in stuff here and there.")
 st.markdown("Check out my projects below.")
-st.button("Explore Projects")
+st.link_button("Explore Projects", '#Projects')
 
 # Projects
 st.markdown("## Projects")
@@ -43,7 +43,7 @@ for project in projects:
         st.markdown("### " + project["title"])
         st.markdown(project["description"])
         st.markdown("**Tech Stack:** " + ", ".join(project["tech_stack"]))
-        st.button("Learn More", on_click=lambda: st.write(f"Link to project: {project['url']}"))
+        st.link_button("Learn More", project['url'], help=project['url'])
 
 # Skills
 st.markdown("## Skills")

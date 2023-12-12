@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Define project data
+# Projects Data
 projects = [
     {
         "title": "Research Paper Summarizer",
@@ -9,27 +9,27 @@ projects = [
         "screenshot": "images/profile_pic.jpg",
         "url": "https://github.com/your-username/project1",
     },
-    # {
-    #     "title": "Project 2 Title",
-    #     "description": "Another brief description of the project.",
-    #     "tech_stack": ["Technology 3", "Technology 4"],
-    #     "screenshot": "project2_screenshot.jpg",
-    #     "url": "https://github.com/your-username/project2",
-    # },
+    {
+        "title": "Project 2 Title",
+        "description": "Another brief description of the project.",
+        "tech_stack": ["Technology 3", "Technology 4"],
+        "screenshot": "images/profile_pic.jpg",
+        "url": "https://github.com/your-username/project2",
+    },
     # ... Add more projects ...
 ]
 
-# Define skills data
+# Skills Data
 skills = [
     {"name": "Natural Language Processing", "proficiency": 90},
     {"name": "Computer Vision", "proficiency": 80},
     {"name": "Deep Learning", "proficiency": 95},
 ]
 
-# Define layout
+# Layout
 
 # Homepage
-st.markdown("# Welcome to my portfolio! ")
+st.markdown("# Welcome to my portfolio!")
 st.markdown("I'm MC Sharen Ganesh, a passionate Machine Learning and LLM enthusiast.")
 st.markdown("I'm skilled in stuff here and there.")
 st.markdown("Check out my projects below.")
@@ -37,13 +37,17 @@ st.link_button("Explore Projects", '#Projects')
 
 # Projects
 st.markdown("## Projects")
-for project in projects:
-    with st.container():
-        st.image(project["screenshot"], width=300)
-        st.markdown("### " + project["title"])
-        st.markdown(project["description"])
-        st.markdown("**Tech Stack:** " + ", ".join(project["tech_stack"]))
-        st.link_button("Learn More", project['url'], help=project['url'])
+lst_projects = list(d["title"] for d in projects)
+project_tabs = st.tabs(lst_projects)
+for i, project in enumerate(projects):
+    with project_tabs[i]:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(project["screenshot"], width=300)
+        with col2:
+            st.markdown("### " + project["title"])
+            st.markdown(project["description"])
+            st.markdown("**Tech Stack:** " + ", ".join(project["tech_stack"]))
 
 # Skills
 st.markdown("## Skills")

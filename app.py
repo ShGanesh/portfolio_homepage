@@ -35,7 +35,7 @@ skills = [
 # Display PDF
 def displayPDF():
     # Creates a window to viewa PDF.
-    file = "files\Ganesh_Resumex09.pdf"
+    file = "files/Ganesh_Resumex09.pdf"
     with open(file, "rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')     
     # Embedding PDF

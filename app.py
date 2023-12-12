@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+import os
 
 # Projects Data
 projects = [
@@ -83,6 +84,7 @@ def expander(lst, name):
 # Layout
 # Homepage
 st.markdown("# Welcome to my portfolio!")
+st.markdown(os.listdir())
 st.markdown("I'm MC Sharen Ganesh, a passionate Machine Learning and LLM enthusiast.")
 st.markdown("I'm skilled in stuff here and there.")
 displayPDF()

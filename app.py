@@ -85,6 +85,7 @@ def expander(lst, name):
 st.markdown("# Welcome to my portfolio!")
 st.markdown("I'm MC Sharen Ganesh, a passionate Machine Learning and LLM enthusiast.")
 st.markdown("I'm skilled in stuff here and there.")
+displayPDF()
 st.download_button("Download my resume", data = getPDF(), file_name="ShGanesh_Resume.pdf", mime='application/octet-stream') 
 st.markdown("Check out my projects below.")
 

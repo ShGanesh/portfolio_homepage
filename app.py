@@ -6,11 +6,11 @@ import os
 projects = [
     {
         "title": "Research Paper Summarizer",
-        "description": "A tool to summarize research papers intelligently. It first splits the paper in sections by the titles, and summarizes them part by part.",
+        "description": "A tool to summarize research papers intelligently. It first splits the paper in sections by the titles, and summarizes them part by part. There are nine levels of abstractions a user can choose from.",
         "tech_stack": ["Technology 1", "Technology 2"],
-        "screenshot": "images/profile_pic.jpg",
-        "proj_skills": ["Natural Language Processing", "Langchain", "Deep Learning"],
-        "url": "https://github.com/your-username/project1",
+        "screenshot": "images/summarizer_ss.png",
+        "proj_skills": ["Natural Language Processing", "Google Generative AI"],
+        "url": "https://summarizer-shganesh.streamlit.app/",
     },
     {
         "title": "Project 2 Title",
@@ -25,11 +25,12 @@ projects = [
 
 # Skills Data
 skills = [
-    {"name": "Natural Language Processing", "proficiency": 90, "description": "Natural Language Processing (NLP) is the field of AI concerned with enabling computers to understand, interpret, and manipulate human language."},
-    {"name": "Computer Vision", "proficiency": 80, "description": "Computer vision (CV) is a subfield of AI that enables computers to extract meaningful information from digital images and videos for automated understanding and action."},
-    {"name": "Deep Learning", "proficiency": 95, "description": "Deep learning is a subfield of machine learning that uses artificial neural networks with multiple layers to learn complex representations of data."},
+    {"name": "Natural Language Processing", "proficiency": 0, "description": "Natural Language Processing (NLP) is the field of AI concerned with enabling computers to understand, interpret, and manipulate human language."},
+    {"name": "Computer Vision", "proficiency": 0, "description": "Computer vision (CV) is a subfield of AI that enables computers to extract meaningful information from digital images and videos for automated understanding and action."},
+    {"name": "Deep Learning", "proficiency": 0, "description": "Deep learning is a subfield of machine learning that uses artificial neural networks with multiple layers to learn complex representations of data."},
+    {"name": "Google Generative AI", "proficiency": 0, "description": "It is a Natural Language Processing tool by Google AI."}
 ]
-# TODO: Correct and apend to the skills
+# TODO: Correct and append to the skills
 
 
 # Display PDF

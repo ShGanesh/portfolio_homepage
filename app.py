@@ -69,6 +69,8 @@ def expander(lst, name):
         lst_projects = []
         for d in lst:
             lst_projects.append(d['title'])
+        if len(lst_projects) == 0:
+            return None
         # Create tabs for each project
         project_tabs = st.tabs(lst_projects)
         for i, project in enumerate(lst):

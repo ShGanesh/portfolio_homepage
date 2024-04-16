@@ -20,6 +20,14 @@ projects = [
         "proj_skills": ["Computer Vision", "Natural Language Processing"],
         "url": "https://github.com/your-username/project2",
     },
+    {
+        "title": "Implementation of Transformers paper in PyTorch",
+        "description": "Implementation(s) of paper by Vaswani et al.",
+        "tech_stack": ["Natural Language Processing", "Deep Learning"],
+        "screenshot": "images/profile_pic.jpg",
+        "proj_skills": ["Computer Vision", "Natural Language Processing"],
+        "url": "https://github.com/ShGanesh/Attention-Paper-pytorch",
+    },
     # ... TODO: Add more projects ...
 ]
 

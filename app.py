@@ -6,27 +6,27 @@ import os
 projects = [
     {
         "title": "Research Paper Summarizer",
-        "description": "A tool to summarize research papers intelligently. It first splits the paper in sections by the titles, and summarizes them part by part. There are nine levels of abstractions a user can choose from.",
-        "tech_stack": ["Technology 1", "Technology 2"],
+        "description": "A tool to summarize research papers intelligently. It first splits the paper in sections according to semantic sense and summarizes them part by part. There are nine levels of abstractions a user can choose from.",
+        "tech_stack": ["Streamlit", "Google GenAI (Gemini)"],
         "screenshot": "images/summarizer_ss.png",
         "proj_skills": ["Natural Language Processing", "Google Generative AI"],
         "url": "https://summarizer-shganesh.streamlit.app/",
     },
     {
-        "title": "Project 2 Title",
-        "description": "Another brief description of the project.",
-        "tech_stack": ["Technology 3", "Technology 4"],
-        "screenshot": "images/profile_pic.jpg",
-        "proj_skills": ["Computer Vision", "Natural Language Processing"],
-        "url": "https://github.com/your-username/project2",
-    },
-    {
         "title": "Implementation of Transformers paper in PyTorch",
         "description": "Implementation(s) of paper by Vaswani et al.",
-        "tech_stack": ["Natural Language Processing", "Deep Learning"],
-        "screenshot": "images/profile_pic.jpg",
-        "proj_skills": ["Computer Vision", "Natural Language Processing"],
+        "tech_stack": ["LlamaIndex", "BertTokenizer"],
+        "screenshot": "images/attention.jpg",
+        "proj_skills": ["PyTorch", "Natural Language Processing", "Deep Learning"],
         "url": "https://github.com/ShGanesh/Attention-Paper-pytorch",
+    },
+    {
+        "title": "RAG model for retrieval of HR policies",
+        "description": "Retrieval-Augmented Generation (RAG) is an AI framework for retrieving facts from an external knowledge base. It was used to help me ",
+        "tech_stack": ["Technology 3", "Technology 4"],
+        "screenshot": "images/rag.jpg",
+        "proj_skills": ["LangChain", "Natural Language Processing"],
+        "url": "https://github.com/ShGanesh/RAG",
     },
     # ... TODO: Add more projects ...
 ]
@@ -34,9 +34,11 @@ projects = [
 # Skills Data
 skills = [
     {"name": "Natural Language Processing", "proficiency": 0, "description": "Natural Language Processing (NLP) is the field of AI concerned with enabling computers to understand, interpret, and manipulate human language."},
-    {"name": "Computer Vision", "proficiency": 0, "description": "Computer vision (CV) is a subfield of AI that enables computers to extract meaningful information from digital images and videos for automated understanding and action."},
+#    {"name": "Computer Vision", "proficiency": 0, "description": "Computer vision (CV) is a subfield of AI that enables computers to extract meaningful information from digital images and videos for automated understanding and action."},
     {"name": "Deep Learning", "proficiency": 0, "description": "Deep learning is a subfield of machine learning that uses artificial neural networks with multiple layers to learn complex representations of data."},
-    {"name": "Google Generative AI", "proficiency": 0, "description": "It is a Natural Language Processing tool by Google AI."}
+    {"name": "HuggingFace", "proficiency": 0, "description": "HuggingFace is an Open-Source hub for pre-trained models and AI/DL development tools"},
+    {"name": "PyTorch", "proficiency": 0, "description": "PyTorch is a powerful library used for training Deep Neural Networks."},
+    {"name": "LangChain", "proficiency": 0, "description": "Langchain is an Open-Source language model integration framework."},
 ]
 # TODO: Correct and append to the skills
 

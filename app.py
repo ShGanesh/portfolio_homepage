@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-import os
 
 # Projects Data
 projects = [
@@ -16,16 +15,16 @@ projects = [
         "title": "Implementation of Transformers paper in PyTorch",
         "description": "Implementation(s) of paper by Vaswani et al.",
         "tech_stack": ["LlamaIndex", "BertTokenizer"],
-        "screenshot": "images/attention.jpg",
+        "screenshot": "images/attention.png",
         "proj_skills": ["PyTorch", "Natural Language Processing", "Deep Learning"],
         "url": "https://github.com/ShGanesh/Attention-Paper-pytorch",
     },
     {
         "title": "RAG model for retrieval of HR policies",
         "description": "Retrieval-Augmented Generation (RAG) is an AI framework for retrieving facts from an external knowledge base. It was used to help me ",
-        "tech_stack": ["Technology 3", "Technology 4"],
-        "screenshot": "images/rag.jpg",
-        "proj_skills": ["LangChain", "Natural Language Processing"],
+        "tech_stack": ["FAISS", "LangChain", "LlamaIndex", ],
+        "screenshot": "images/rag.png",
+        "proj_skills": ["LangChain", "Natural Language Processing", "HuggingFace"],
         "url": "https://github.com/ShGanesh/RAG",
     },
     # ... TODO: Add more projects ...
@@ -123,5 +122,5 @@ st.markdown("GitHub: https://github.com/ShGanesh")
 
 st.markdown("***")
 # Footer
-st.markdown("Copyright © 2023 ShGanesh. All rights reserved.")
+st.markdown("Copyright © 2024 ShGanesh. All rights reserved.")
 

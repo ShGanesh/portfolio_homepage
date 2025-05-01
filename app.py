@@ -54,8 +54,8 @@ def displayPDF():
 
 # Retrieve PDF
 def getPDF():
-    # Returns object that can be used to download a PDF
-    file = "files/Ganesh_Resumex09.pdf"
+    # Returns the object that can be used to download a PDF
+    file = "files/ganesh_resume_V.pdf"
     with open(file, "rb") as f:
         PDFbyte = f.read()
         return PDFbyte
